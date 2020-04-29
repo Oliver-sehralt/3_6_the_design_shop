@@ -1,0 +1,345 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+
+/*variables */
+:root {
+--primary: #323A45;
+--secondary: #848484;
+}
+
+/*reset*/
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+}
+
+body nav ul li {
+    list-style: none;
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+nav ul li { 
+    display: block;
+    padding-right: 20px;
+    float: right;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #323A45;
+}
+
+.primary, .price {
+    color: var(--primary);
+}
+
+.secondary {
+    color: var(--secondary);
+}
+
+.price {
+    float: right;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: (3,1fr);
+    justify-content: center;
+    grid-template-areas: 
+    "content1"
+    "content2"
+    "content3"
+    "content4"
+    "content5"
+    "content6"
+    "content7"
+    "content8"
+    "content9"
+    "content10"
+    "content11"
+    "content12"
+    "content13"
+    "content14"
+    "content15"
+    "content16"
+    "content17"
+    "content18"
+    "content19"
+    "content20"
+    "content21"
+    "content22"
+    "content23"
+    "content24"
+    "content25"
+    "content26"
+    "content27"
+    "content28"
+    "content29"
+    "content30"
+    "content31"
+    "content32";
+}
+
+.item1 {
+    grid-area: content1;
+}
+
+.item2 {
+    grid-area: content2;
+}
+
+.item3 {
+    grid-area: content3;
+}
+
+.item4 {
+    grid-area: content4;
+}
+
+.item5 {
+    grid-area: content5;
+}
+
+.item6 {
+    grid-area: content6;
+}
+
+.item7 {
+    grid-area: content7;
+}
+
+.item8 {
+    grid-area: content8;
+}
+
+.item9 {
+    grid-area: content9;
+}
+
+.item10 {
+    grid-area: content10;
+}
+
+.item11{
+    grid-area: content11;
+}
+
+.item12 {
+    grid-area: content12;
+}
+
+.item13 {
+    grid-area: content13;
+}
+
+.item14 {
+    grid-area: content14;
+}
+
+.item15 {
+    grid-area: content15;
+}
+
+.item16 {
+    grid-area: content16;
+}
+
+.item17 {
+    grid-area: content17;
+}
+
+.item18 {
+    grid-area: content18;
+}
+
+.item19 {
+    grid-area: content19;
+}
+
+.item20 {
+    grid-area: content20;
+}
+
+.item21 {
+    grid-area: content21;
+}
+
+.item22 {
+    grid-area: content22;
+}
+
+.item23 {
+    grid-area: content23;
+}
+
+.item24 {
+    grid-area: content24;
+}
+
+.item25 {
+    grid-area: content25;
+}
+
+.item26 {
+    grid-area: content26;
+}
+
+.item27 {
+    grid-area: content27;
+}
+
+.item28 {
+    grid-area: content28;
+}
+
+.item29 {
+    grid-area: content29;
+}
+
+.item30 {
+    grid-area: content30;
+}
+
+.item31 {
+    grid-area: content31;
+}
+
+.item32 {
+    grid-area: content32;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: (3, 1fr);
+    justify-content: center;
+    grid-template-areas: 
+    "footer1"
+    "footer2"
+    "footer3";
+
+    margin-top: 40px;
+}
+
+.footer1 {
+    grid-area: footer1;
+}
+
+.footer2 {
+    grid-area: footer2;
+}
+
+.footer3 {
+    grid-area: footer3;
+}
+
+.grid div a img {
+    width: 250px;
+    height: 250px;
+}
+
+.grid div a img:hover {
+    opacity: 0.2;
+    background-color: lightgrey;
+}
+
+.grid div p {
+    font-size: 0.7em;
+}
+
+/*tablets max-width 768px */
+
+@media screen and (min-width: 321px) {
+.grid div a img {
+    width: 300px;
+    height: 300px;
+}
+.grid div p {
+    font-size: 1em;
+}
+.grid {
+    grid-template-areas: 
+    "content1 content2"
+    "content3 content4"
+    "content5 content6"
+    "content7 content8"
+    "content9 content10"
+    "content11 content12"
+    "content13 content14"
+    "content15 content16"
+    "content17 content18"
+    "content19 content20"
+    "content21 content22"
+    "content23 content24"
+    "content25 content26"
+    "content27 content28"
+    "content29 content30"
+    "content31 content32";
+}
+
+footer {
+    grid-template-areas: 
+    "footer1 footer2"
+    "footer3";
+
+    grid-gap: 35px;
+}
+}
+
+
+
+
+/*desktop min-width 769 px*/
+
+@media screen and (min-width: 769px) {
+    .grid div a img {
+        width: 450px;
+        height: 450px;
+    }
+
+    .grid div a img:nth-last-child(3n+1) {
+        width: 100%;
+        height: 450px;
+    }
+    .grid div p {
+        font-size: 1.4em;
+    }
+    .grid {
+        grid-template-areas: 
+        "content1 content1 content1"
+        "content2 content3 content4"
+        "content5 content6 content7"
+        "content8 content8 content8"
+        "content9 content10 content11"
+        "content12 content13 content14"
+        "content15 content15 content15"
+        "content16 content17 content18"
+        "content19 content20 content21"
+        "content22 content22 content22"
+        "content23 content24 content25"
+        "content26 content27 content28"
+        "content29 content29 content29"
+        "content30 content31 content32";
+    }
+
+    footer {
+        grid-template-areas: 
+        "footer1 footer2 footer3";
+
+        grid-gap: 400px;
+    }
+}
+
+.footer2 a {
+    text-decoration: none;
+    color: #848484;
+}
+
+.footer3 p a {
+    text-decoration: none;
+    color: #848484;
+}
